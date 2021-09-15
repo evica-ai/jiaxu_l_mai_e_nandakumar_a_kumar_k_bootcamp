@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TEAM</title>
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- title font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+   <!-- paragraph font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">     
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div id="wrapper" class="padding_lr--0075">
+            <div class="inner bgImg_team">
+                <figure class="logo">
+                    <img src="images/logo.svg" alt="logo">
+                </figure>
+                <nav class="menu">
+                    <input type="checkbox" id="menuToggle">
+                    <label for="menuToggle" class="menu-icon">
+
+                        <div class="burger">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                    </label>
+                    <ul class=" clearfix">
+                        <li>
+                            <a href="index.html">home<span></span></a>
+                        </li>
+                        <li>
+                            <a href="about.html">about<span></span></a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">portfolio<span></span></a>
+                        </li>
+                        <li class="current">
+                            <a href="team.html">team<span></span></a>
+                        </li>
+                        <li>
+                            <a href="contact.html">contact<span></span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="container_team display--flex ai--flex-start ac--center jc--space-around">
+                    <div class="leftSide_team">
+                        <h1 class="color--white">
+                            Popular branding
+                            specialists
+                        </h1>
+                        <div class="button_team">
+                            <p class="ta--right">
+                                <a href="#" class="button_find">FIND</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rightSide_team">&nbsp;</div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="wrapper" class="padding_lr--0075">
+            <section class="section1_team bgColor--blackBlue">
+                <article class="display--flex flex-term-direction jcontent--space-between">
+                    <div class="text_section1_team flex-grow--1 ta--center">
+                        <h2 class="color--white">liu jiaxu</h2>
+                        <h3 class="ta--center">Interactive designer</h3>
+                        <p class="color--white">
+
+                            She is a visual and animation
+                            designer. His strength lies in
+                            his ability to use his
+                            multidisciplinary skills in
+                            interaction design, 3D animation
+                            and user interface to create
+                            purposeful and aesthetically
+                            pleasing designs/experiences to
+                            help local companies create
+                            their brands.
+                        </p>
+                        <p><button class="button_find" id="triggerButton">TERM</button></p>
+
+                    </div>
+                    <div class="pic_section1_team flex-shrink--0 order--n1">
+                        <img src="images/team001.png" alt="team001" class="img_team">
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div id="wrapper" class="padding_lr--0075">
+            <div
+                class="container_footer bgColor--fdfdfd display--flex ac--center jc--space-evenly mobile480_column-reverse">
+                <div class="item_footer ta--center">
+                    <h3>Follow us</h3>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                                <img src="images/Social_media_1.png" alt="instagram" class="img-Social_media">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                                <img src="images/Social_media_2.png" alt="facebook" class="img-Social_media">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https:/twitter.com" target="_blank" title="Twitter">
+                                <img src="images/Social_media_3.png" alt="twitter" class="img-Social_media">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item_footer ta--center">
+                    <h3>London Office</h3>
+                    <p>1128 Oxford St</p>
+                    <p>London, ON</p>
+                    <p>N6G1C1</p>
+                </div>
+                <div class="item_footer ta--center">
+                    <figure class="logo_footer">
+                        <img src="images/logo.svg" alt="logo">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Term</h2>
+                <span id="closeButton" class="close">×</span>
+            </div>
+            <div class="modal-body">
+
+                <div id="termContent"></div>
+            </div>
+            <div class="modal-footer">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/modal.js"></script>
+</body>
+
+</html>

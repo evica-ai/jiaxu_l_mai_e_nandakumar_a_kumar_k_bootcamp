@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
+.hidden{
+    display:none;
+}
 
 *{
     margin: 0;
@@ -212,17 +215,18 @@ header,main,footer{
 
 .logo{
     position: absolute;
-    top: 3%;
-    left: 30px;
+    top: -10%;
+    left: -10px;
 }
 
 .logo img{
-    width: 150px;
+    width: 200px;
 }
 
 nav {
     position: absolute;
-    top: 30px;
+    margin-left: 200px;
+    top: 40px;
     right: 35px;
 }
 
@@ -233,12 +237,12 @@ nav li {
 }
 
 nav a {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #fff;
     margin-top: 6px;
     display: inline-block;
     text-transform: uppercase;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 nav li a span {
@@ -301,31 +305,33 @@ nav li a:hover span {
 .rightSide_home{
     width: 32%;
     margin-top: 13.3%;
-    font-family: 'Arya', sans-serif;
+    font-family: 'Quattrocento', serif;
 }
 
 .rightSide_home h1{
     word-break:break-all;
     overflow:hidden;
     font-size: 3.5rem;
-    line-height: 1.1;   
+    line-height: 1.1;
+    margin-left: 1rem;   
 }
 
 .rightSide_home p{
-    margin-top: 6rem;
+    margin-top: 2rem;
     font-size: 2.6rem;
-    font-weight: 600;
+    font-weight: 300;
+    margin-left: 1rem;
 }
 
 .color--4f5b6f{
-    color: #4f5b6f;
+    color: #37455d;
 }
 
 /* main */
 .content_section1{
     width: 52.8%;
     margin: 0 auto;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Quattrocento', serif;
 }
 
 .content_section1 p{
@@ -337,8 +343,9 @@ nav li a:hover span {
 }
 
 .content_section1 h2{
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 1px;
+    font-family: 'Quattrocento Sans', serif;
 }
 
 .video_home-section2{
@@ -350,7 +357,7 @@ nav li a:hover span {
 .item1_home-section2,.item2_home-section2,.item3_home-section2{
     flex: 1;
     padding: 3rem 3rem 5rem;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .index_icon{
@@ -393,12 +400,12 @@ nav li a:hover span {
 }
 
 .container_about h1{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1.8rem;
 }
 
 .container_about p{
-    font-size: 31px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 
@@ -417,13 +424,149 @@ nav li a:hover span {
     height: 60vh;
 }
 
-.video_about-section1{
-    margin: 0 !important;
-    width: 100%;
-    height: 538px;
+
+
+/* VIDEO IN ABOUT PAGE */
+/* for video part */
+#adsVideo{
+    height: 300px;  
+    background-image: url(../images/team_about_vid.jpg);
+    
 }
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+
+
+
+.videoText{
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#adsVideo p{
+	color: #000308;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 3px;
+    font-family: 'Quanterniro Sans', sans-serif;
+}
+#adsVideo button{
+    margin:0 auto;
+    margin-top: 20px;
+	width: 25%;
+	padding: 10px;
+	border: 5px solid #13294b;
+    border-radius: 10px;
+	background-color: #CF0A2C;
+	font-size: 20px;
+    font-family: 'Quantinero Sans', sans-serif;
+    color:white;
+    font-weight: bolder;
+	cursor: pointer;
+    transition: ease-in-out 0.6s;
+    /* filter: brightness(80%); */
+}
+
+#adsVideo button:hover{
+    filter: brightness(125%);
+	transform: scale(1.2);
+    border-radius: 30px;
+    color: black
+}
+.lightBox{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,.9);
+	z-index: 10;
+	visibility: hidden;
+	opacity: 0;
+}
+.lightBox video{
+	outline: none;
+	position: relative;
+}
+
+.close{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	color:#CF0A2C;
+	font-size: 40px;
+	cursor: pointer;
+    transition: ease-in-out 0.6s;
+}
+
+.close:hover{
+    color: #090cf0;
+}
+
+/* -----------media query kick in -------------*/
+/* for hero part */
+@media screen and (min-width:527px){
+    #adsHero p{ 
+        font-size: 46px;
+    }
+    #adsVideo p{
+	-webkit-text-stroke: 1px #fff; 
+	-webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    margin-top: 20px;
+}
+}
+@media screen and (min-width:834px){
+    #adsHero{
+        background-image: url(../images/ads_page/hero@2x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+    }
+    #adsHero p{ 
+        font-size: 57px;
+    }
+    #adsVideo p{
+        margin: 0 auto;
+        width: 60%;
+        font-size: 50px;margin-top: 10px;
+         text-shadow: 0px 0px 6px rgba(255,255,255,0.4);
+
+    }
+}
+
+
+
 .section1_about{
+    margin-top: 3px;
     font-family: 'Sanchez', serif;
 }
 
@@ -526,7 +669,7 @@ nav li a:hover span {
 
 .text_section2_portfolio{
     padding: 13% 4% 8% 7%;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .text_section2_portfolio p{
@@ -604,11 +747,11 @@ nav li a:hover span {
 
 .text_section1_team{
     padding: 5% 8%;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .text_section1_team h2{
-    font-size: 1.8rem;
+    font-size: 1.8 rem;
     margin-bottom: 10px;
 }
 
@@ -705,7 +848,7 @@ input[type=text], input[type=email], input[type=tel] {
     background-color: transparent;
     border: 2px solid #e86a69;
     outline: none;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -739,7 +882,7 @@ textarea {
     background-color: transparent;
     border: 2px solid #e86a69;
     outline: none;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 textarea {
@@ -765,7 +908,7 @@ textarea {
 
 .item_footer{
     width: 31%;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 .item_footer h3 {
@@ -784,8 +927,15 @@ textarea {
 }
 
 .logo_footer img{
-   width: 25%;
-   margin: 0 auto;
+   width: 60%;
+   margin-top: -20%;
+
+}
+
+.logo_footer{
+    width: 80%;
+    margin-top: -50%;
+    margin: 0 auto;
 }
 
 
@@ -1015,7 +1165,7 @@ textarea {
     }
     .leftSide_table_item1_about-section1,.rightSide_table_item1_about-section1,
     .leftSide_table_item2_about-section1,.rightSide_table_item2_about-section1,
-    .leftSide_table_item3_about-section1,.rightSide_table_item3_about-section1{
+    .leftSide_table_item3_about-section1,.rightSide_table_item3_about-section11{
         flex: 1;
     }
     .itemL_bout_pic,.itemR_bout_pic{

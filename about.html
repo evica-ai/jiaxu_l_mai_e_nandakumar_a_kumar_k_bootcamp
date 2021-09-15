@@ -6,6 +6,15 @@
     <title>ABOUT</title>
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- title font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+   <!-- paragraph font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">     
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+   <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -14,7 +23,7 @@
         <div id="wrapper" class="padding_lr--0075">
             <div class="inner bgImg_about">
                 <figure class="logo">
-                    <img src="images/logo.png" alt="logo">
+                    <img src="images/logo.svg" alt="logo">
                 </figure>
                 <nav class="menu">
                     <input type="checkbox" id="menuToggle">
@@ -46,6 +55,9 @@
                     </ul>
                 </nav>
 
+                <section class="container_abouthero">
+                </section>
+
                 <div class="container_about ta--center">
                     <h1 class="color--white ">
                         Let’s start at the beginning.
@@ -65,12 +77,17 @@
         <div id="wrapper" class="padding_lr--0075">
             <div class="bgImg_section1_about"></div>
 
-            <div class="video_about-section1">
-                <iframe width="100%" height="538" src="https://www.youtube.com/embed/5GJWxDKyk3A"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
+            <section id="adsVideo">
+                <h2 class="hidden">promotional video</h2>
+                <div class="videoText">
+                    <p>Learn More About Us </p>
+                    <button class="videoButton">watch me</button>
+                </div>
+                <div class="lightBox">
+                    <video src="images/lightbulb.mp4" controls></video>
+                    <a href="#" class="close">X</a>
+                </div>
+            </section>
 
             <section class="section1_about bgColor--red padding_tb--060r ta--center">
                 <h2 class="color--white margin-b--050r fs--030r">
@@ -318,7 +335,7 @@
                 </div>
                 <div class="item_footer ta--center">
                         <figure class="logo_footer">
-                            <img src="images/logo.png" alt="logo">
+                            <img src="images/logo.svg" alt="logo">
                         </figure>
                 </div>
             </div>

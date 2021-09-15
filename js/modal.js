@@ -2,10 +2,7 @@
 (function() {
     /**terms**/
     var persons=[
-       {name:"Liu Jiaxu ",profile:"She is a visual and animation   designer. His strength lies in   his ability to use his     multidisciplinary skills in     interaction design, 3D animation     and user interface to create     purposeful and aesthetically     pleasing designs/experiences to     help local companies create  their brands."},
-       {name:"Liu Jiaxu A",profile:"She is a visual and animation   designer. His strength lies in   his ability to use his     multidisciplinary skills in     interaction design, 3D animation     and user interface to create     purposeful and aesthetically     pleasing designs/experiences to     help local companies create  their brands."},
-       {name:"Liu Jiaxu B",profile:"She is a visual and animation   designer. His strength lies in   his ability to use his     multidisciplinary skills in     interaction design, 3D animation     and user interface to create     purposeful and aesthetically     pleasing designs/experiences to     help local companies create  their brands."},
-       {name:"Liu Jiaxu C",profile:"She is a visual and animation   designer. His strength lies in   his ability to use his     multidisciplinary skills in     interaction design, 3D animation     and user interface to create     purposeful and aesthetically     pleasing designs/experiences to     help local companies create  their brands."},
+       {name:"CONTINUED... ",profile:" On a more professional note, we are passionate about meeting above the standard and fusing your chosen style and vision together.She is a visual and animation designer. His strength lies in his ability to use his multidisciplinary skills in interaction design, 3D animation and user interface to create purposeful and aesthetically pleasing designs/experiences to help local companies create their brands."},
      ];
    var myModal = {};
    

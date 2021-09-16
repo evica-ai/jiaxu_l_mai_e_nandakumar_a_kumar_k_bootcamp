@@ -6,14 +6,14 @@
     <title>TEAM</title>
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- title font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com"> 
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-   <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
-   <!-- paragraph font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">     
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-   <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <!-- title font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+    <!-- paragraph font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
 
 
 </head>
@@ -57,6 +57,7 @@
 
                 <div class="container_team display--flex ai--flex-start ac--center jc--space-around">
                     <div class="leftSide_team">
+                        <h2 class="hidden">Team Hero Section</h2>
                         <h1 class="color--white">
                             Popular branding
                             specialists
@@ -75,33 +76,41 @@
     </header>
     <main>
         <div id="wrapper" class="padding_lr--0075">
+            <h2 class="hidden">Team Introduction</h2>
             <section class="section1_team bgColor--blackBlue">
+                <h2 class="hidden">Team Introduction Text</h2>
                 <article class="display--flex flex-term-direction jcontent--space-between">
                     <div class="text_section1_team flex-grow--1 ta--center">
                         <h2 class="color--white">Epiphany Agency</h2>
                         <h3 class="ta--center">meet the team</h3>
-                        <!-- TEAM BIO LIST -->
-                        <p class="color--white">
-                            They are a group of power rangers: red, yellow, blue and white. Helping each other help fulling cutsomer's vision is what we do best with a splash of sparkles (and donut sprinkles).
+                        <p class="color--white" id="content">
+
+                            They are a group of power rangers: red, yellow, blue and white. Helping each other help
+                            fulling cutsomer's vision is what we do best with a splash of sparkles (and donut
+                            sprinkles).
                         </p>
                         <p><button class="team_bottom" id="triggerButton">TEAM</button></p>
                     </div>
                     <section class="group_photo">
+                        <h2 class="hidden">Members of the Team</h2>
                         <section class="group_1">
-                            <div class="photo"><img src="images/jiaxu.jpg" alt="logo"></div>
-                            <button class="bio-button" data-offset="0">red</button>
-                            <div class="photo"><img src="images/ashwin.jpg" alt="logo"></div>
-                            <button class="bio-button" data-offset="1">yellow</button>
+                            <h2 class="hidden">Photos of the JiaXiu and Aswin members</h2>
+                            <div class="photo"><button class="bio.info.jiaxu" id="trigger_jx"
+                                    onmouseover="changeRole(0)" onmouseout="changeResetRole(0)"><img src="images/jiaxu.jpg" alt="logo"></button></div>
+                            <div class="photo"><button class="bio.info.jiaxu" id="trigger_jx"
+                                onmouseover="changeRole(1)"  onmouseout="changeResetRole(0)"><img src="images/ashwin.jpg" alt="logo"></button></div>
                         </section>
                         <section class="group_2">
-                            <div class="photo"><img src="images/kanak.jpg" alt="logo"></div>
-                            <button class="bio-button" data-offset="2">white</button>
-                            <divs class="photo"><img src="images/evica.jpg" alt="logo"></div>
-                            <button class="bio-button" data-offset="3">blue</button>
-                        </section>
-                    </section>>
-                </article>
-            </section>
+                            <h2 class="hidden">Photos of the Kanak and Evica mmebers</h2>
+                            <div class="photo"><button class="bio.info.jiaxu" id="trigger_jx"
+                                onmouseover="changeRole(2)"  onmouseout="changeResetRole(0)"><img src="images/kanak.jpg" alt="logo"></button></div>
+                            <div class="photo"><button class="bio.info.jiaxu" id="trigger_jx"
+                                onmouseover="changeRole(3)"  onmouseout="changeResetRole(0)"><img src="images/evica.jpg" alt="logo"></button>
+        </div>
+        </section>
+        </section>>
+        </article>
+        </section>
         </div>
     </main>
 
@@ -155,11 +164,15 @@
                 <div id="termContent"></div>
             </div>
             <div class="modal-footer">
+                <h2 class="hidden">Bottom Nav</h2>
                 <h3></h3>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/modal.js"></script>
+
+    <script src="js/changeRoleInfo.js">
+      
+    </script>
 </body>
 
 </html>
